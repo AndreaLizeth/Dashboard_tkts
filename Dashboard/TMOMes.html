@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navbar con Menú y iFrame</title>
+  <!-- Agrega la referencia al archivo CSS de Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Agrega tu archivo de estilos personalizado -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">
+          <img src="https://i.ibb.co/5vSDSJ0/IM-Power-BI-Pro-Icono.png" alt="IM-Power-BI-Pro-Icono" width="30" height="30" class="d-inline-block align-top" alt="">
+          Dashboard 
+        </a>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+      <div class="position-sticky">
+
+        <ul class="nav flex-column">
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <img src="https://i.ibb.co/CVHjZzd/ceo.png" alt="Gerente-Icono" width="30" height="30" class="d-inline-block align-top" alt="">
+          Gerente
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Dashboard.html">Resumen Semanal</a>
+          </li>
+        </ul>
+        <ul class="nav flex-column">
+
+          <li class="nav-item">
+            <a class="nav-link" >
+              <img src="https://i.ibb.co/6yF3rH8/apoyo-tecnico-1.png" alt="Gerente-Icono" width="30" height="30" class="d-inline-block align-top" alt="">
+          Técnico
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="TMOMes.html">TMO por Mes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="TMOSemana.html">TMO por Semana</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="AtencionGrupo.html">Atención por Grupo</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+      
+      
+      <!-- Ejemplo de iframe -->
+      <iframe src="https://app.powerbi.com/view?r=eyJrIjoiNzUxYzM5Y2ItZjQwZC00ZjIxLTgzZDItNDc0NTlmNDU4OWY4IiwidCI6IjY4MmE0ZTZhLWE3N2YtNDk1OC1hM2FjLTllMjY2ZDE4YWEzNyIsImMiOjR9"  allowfullscreen frameborder="0" class="w-100" style="height: 800px;"></iframe>
+    </main>
+  </div>
+</div>
+
+<!-- Agrega la referencia al archivo JS de Bootstrap y Popper.js (necesario para el funcionamiento del navbar-toggler) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
